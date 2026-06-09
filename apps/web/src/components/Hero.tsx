@@ -12,7 +12,7 @@ export function Hero() {
       <div className={styles.left}>
         <div className={styles.badge}>
           <span className={styles.dot} />
-          v0.1.0 — Ethereum · testnet live
+          v0.1.0 — Ethereum ·  live
         </div>
 
         <h1 className={styles.heading}>
