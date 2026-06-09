@@ -1,0 +1,175 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.input,
+.select {
+  background: var(--bg);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.input:focus,
+.select:focus {
+  border-color: var(--accent-dim);
+}
+
+.input:disabled,
+.select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.select option {
+  background: var(--bg2);
+  color: var(--text);
+}
+
+.statusBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  animation: pulse-dot 1.5s infinite;
+}
+
+.statusText {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.errorBar {
+  background: rgba(220, 80, 80, 0.08);
+  border: 1px solid rgba(220, 80, 80, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: #f08080;
+}
+
+.submit {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 13px 20px;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-top: 4px;
+}
+
+.submit:hover:not(:disabled) {
+  background: #b8c8ba;
+}
+
+.submit:disabled {
+  background: rgba(216, 239, 217, 0.2);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+/* ── Success state ── */
+.success {
+  border: 1px solid rgba(216, 239, 217, 0.25);
+  border-radius: var(--radius-md);
+  background: rgba(216, 239, 217, 0.04);
+  padding: 24px;
+}
+
+.successLabel {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 16px;
+  margin-bottom: 18px;
+}
+
+.key {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.val {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text);
+}
+
+.txLink {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: #7ab4f0;
+  text-decoration: underline;
+}
+
+.none {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.reset {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s;
+  padding: 0;
+}
+
+.reset:hover {
+  color: var(--text);
+}

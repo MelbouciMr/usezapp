@@ -1,0 +1,14 @@
+{
+  "name": "zapp",
+  "private": true,
+  "packageManager": "npm@10.0.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev":       "npm run dev --workspace=apps/web",
+    "build":     "npm run build --workspace=apps/web",
+    "build:sdk": "npm run build --workspace=packages/use-zapp"
+  }
+}

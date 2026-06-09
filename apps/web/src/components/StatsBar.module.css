@@ -1,0 +1,52 @@
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--border);
+}
+
+.card {
+  padding: 40px 36px;
+  border-right: 1px solid var(--border);
+  opacity: 0;
+  animation: fade-up 0.5s ease forwards;
+}
+.card:last-child { border-right: none; }
+
+.num {
+  font-family: var(--mono);
+  font-size: clamp(32px, 3vw, 48px);
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.sub {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .section { grid-template-columns: repeat(2, 1fr); }
+  .card:nth-child(2) { border-right: none; }
+  .card:nth-child(3) { border-top: 1px solid var(--border); }
+  .card:nth-child(4) { border-top: 1px solid var(--border); border-right: none; }
+}
