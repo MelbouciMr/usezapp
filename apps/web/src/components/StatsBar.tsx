@@ -5,7 +5,7 @@ import styles from "./StatsBar.module.css";
 
 const STATS = [
   { value: 3,    suffix: "",  label: "phases",        sub: "deposit · prove · withdraw" },
-  { value: 4,    suffix: "",  label: "chains",         sub: "base · base-sepolia · solana · devnet" },
+  { value: 4,    suffix: "",  label: "chains",         sub: "ethereum · eth-sepolia · devnet" },
   { value: 100,  suffix: "%", label: "ASP-compliant",  sub: "clean subset by construction" },
   { value: 0,    suffix: "",  label: "on-chain links", sub: "between sender and receiver" },
 ];
