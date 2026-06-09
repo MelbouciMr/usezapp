@@ -19,7 +19,7 @@ export function Navbar() {
       <ul className={styles.links}>
         <li><a href="#how-it-works">how it works</a></li>
         <li><a href="#hooks">hooks</a></li>
-        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">github</a></li>
+        <li><a href="https://x.com/usezapp_" target="_blank" rel="noopener noreferrer">socials</a></li>
       </ul>
 
       <div className={styles.right}>
